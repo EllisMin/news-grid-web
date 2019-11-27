@@ -317,6 +317,20 @@ h6 {
   grid-column: 2 / span 2;
 }
 
+/* Article page */
+#article .meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #eee;
+  padding: 0.5rem;
+}
+
+#article .meta .category {
+    /* align-self: center; */
+    margin-top: 0.4rem;
+}
+
 /* Footer */
 #main-footer {
   background: var(--dark-color);

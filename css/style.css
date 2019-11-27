@@ -110,6 +110,9 @@ h6 {
 .card {
   background: #fff;
   padding: 1rem;
+
+  /* Added to fill up gap inside <a> tag */
+  height: 100%;
 }
 
 .bg-dark {
@@ -327,8 +330,7 @@ h6 {
 }
 
 #article .meta .category {
-    /* align-self: center; */
-    margin-top: 0.4rem;
+  margin-top: 0.4rem;
 }
 
 /* Footer */

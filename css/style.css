@@ -145,7 +145,7 @@ h6 {
 }
 
 .l-heading {
-    font-size: 3rem;
+  font-size: 3rem;
 }
 
 .list li {
@@ -302,12 +302,14 @@ h6 {
 }
 
 /* Grid inside grid for the first item */
-#home-articles .articles-container > *:first-child,
-#home-articles .articles-container > *:last-child {
+#home-articles .articles-container > *:first-child .card,
+#home-articles .articles-container > *:last-child .card {
   display: grid;
   grid-template-columns: 1fr 1fr;
   gap: 1rem;
   align-items: center;
+}
+#home-articles .articles-container > *:first-child {
   grid-column: 1 / span 2;
 }
 

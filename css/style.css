@@ -82,6 +82,8 @@ h6 {
   background: var(--dark-color);
   color: #fff;
   padding: 0.5rem 1.5rem;
+
+  /* transition: opacity 0.2s ease-in; */
 }
 .btn-light {
   background: var(--light-color);
@@ -93,10 +95,64 @@ btn-secondary {
   background: var(--secondary-color);
 }
 .btn:hover {
-    opacity: 0.85;
+  opacity: 0.85;
 }
 .btn-block {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
 
+.card {
+  background: #fff;
+  padding: 1rem;
+}
+
+.bg-dark {
+  background: var(--dark-color);
+  color: #fff;
+}
+.bg-primary {
+  background: var(--primary-color);
+  color: #fff;
+}
+.bg-secondary {
+  background: var(--secondary-color);
+  color: #fff;
+}
+.py-1 {
+  padding: 1.5rem 0;
+}
+.py-2 {
+  padding: 2rem 0;
+}
+.py-3 {
+  padding: 3rem 0;
+}
+
+.p-1 {
+  padding: 1.5rem;
+}
+.p-2 {
+  padding: 2rem;
+}
+.p-3 {
+  padding: 3rem;
+}
+
+.bg-dark h1,
+.bg-dark h2,
+.bg-dark h3,
+.bg-dark a,
+.bg-primary h1,
+.bg-primary h2,
+.bg-primary h3,
+.bg-primary a,
+.bg-secondary h1,
+.bg-secondary h2,
+.bg-secondary h3,
+.bg-secondary a {
+    color: #fff;
 }
 
 /* Nav */
@@ -158,12 +214,14 @@ btn-secondary {
   color: #fff;
 }
 
+/* social media icons */
 #main-nav .social {
   justify-self: center;
 }
 #main-nav .social i {
   color: #777;
   margin-right: 0.5rem;
+  transition: color 0.4s ease;
 }
 #main-nav .social i:hover {
   color: var(--dark-color);
@@ -204,4 +262,24 @@ btn-secondary {
 
 #showcase .showcase-container p {
   margin-bottom: 1rem;
+}
+
+/* Home Articles */
+#home-articles .articles-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+/* Grid inside grid for the first item */
+#home-articles .articles-container > *:first-child,
+#home-articles .articles-container > *:last-child {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+  align-items: center;
+  grid-column: 1 / span 2;
+}
+#home-articles .articles-container > *:last-child {
+  grid-column: 2 / span 2;
 }

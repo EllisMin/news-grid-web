@@ -76,7 +76,28 @@ h6 {
   background: var(--tech-color);
 }
 
+.btn {
+  display: inline-block;
+  border: none;
+  background: var(--dark-color);
+  color: #fff;
+  padding: 0.5rem 1.5rem;
+}
+.btn-light {
+  background: var(--light-color);
+}
+.btn-primary {
+  background: var(--primary-color);
+}
+btn-secondary {
+  background: var(--secondary-color);
+}
+.btn:hover {
+    opacity: 0.85;
+}
+.btn-block {
 
+}
 
 /* Nav */
 #main-nav {
@@ -179,4 +200,8 @@ h6 {
 /* Move text on top of image */
 #showcase .showcase-content {
   z-index: 1;
+}
+
+#showcase .showcase-container p {
+  margin-bottom: 1rem;
 }
